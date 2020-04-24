@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.sypm.webapi.mapper.StudentMapper">
+
+    <select id="getInfo" parameterType="Integer" resultType="com.sypm.webapi.bean.StudentBean">
+        SELECT * FROM Student WHERE id = #{id}
+    </select>
+
+    <insert id="insertOne" parameterType="com.sypm.webapi.bean.StudentBean">
+        insert into Student(name, age) values(#{name}, #{age})
+    </insert>
+
+</mapper>

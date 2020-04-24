@@ -1,0 +1,1198 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.sypm.webapi.mapper.CommonMapper">
+
+    <resultMap id="TcommodityResultMap" type="com.sypm.webapi.bean.TcommodityMaster">
+        <id column = "COMMODITYID" property = "COMMODITYID" jdbcType = "VARCHAR" />
+        <result column = "MATNR" property = "MATNR" jdbcType = "VARCHAR" />
+        <result column = "MAKTX" property = "MAKTX" jdbcType = "VARCHAR" />
+        <result column = "MTART" property = "MTART" jdbcType = "VARCHAR" />
+        <result column = "MATKL1" property = "MATKL1" jdbcType = "VARCHAR" />
+        <result column = "MATKL2" property = "MATKL2" jdbcType = "VARCHAR" />
+        <result column = "MATKL3" property = "MATKL3" jdbcType = "VARCHAR" />
+        <result column = "MATKL" property = "MATKL" jdbcType = "VARCHAR" />
+        <result column = "ZZGG" property = "ZZGG" jdbcType = "VARCHAR" />
+        <result column = "BISMT" property = "BISMT" jdbcType = "VARCHAR" />
+        <result column = "ZZGENERALNAME" property = "ZZGENERALNAME" jdbcType = "VARCHAR" />
+        <result column = "ZZSPZJM" property = "ZZSPZJM" jdbcType = "VARCHAR" />
+        <result column = "ZZPSBCZBZ" property = "ZZPSBCZBZ" jdbcType = "VARCHAR" />
+        <result column = "ZZLB_ID" property = "ZZLB_ID" jdbcType = "VARCHAR" />
+        <result column = "ZZLIFNR_DES" property = "ZZLIFNR_DES" jdbcType = "VARCHAR" />
+        <result column = "LANDX" property = "LANDX" jdbcType = "VARCHAR" />
+        <result column = "BEZEI" property = "BEZEI" jdbcType = "VARCHAR" />
+        <result column = "ZZJYFW" property = "ZZJYFW" jdbcType = "VARCHAR" />
+        <result column = "ZZISCF" property = "ZZISCF" jdbcType = "VARCHAR" />
+        <result column = "ZZISCFHJ" property = "ZZISCFHJ" jdbcType = "VARCHAR" />
+        <result column = "ZZISYBPZ" property = "ZZISYBPZ" jdbcType = "VARCHAR" />
+        <result column = "MHDHB" property = "MHDHB" jdbcType = "NUMERIC" />
+        <result column = "MHDRZ" property = "MHDRZ" jdbcType = "NUMERIC" />
+        <result column = "ZZJX_DESC" property = "ZZJX_DESC" jdbcType = "VARCHAR" />
+        <result column = "TAKLV" property = "TAKLV" jdbcType = "VARCHAR" />
+        <result column = "ZZISJEPZ" property = "ZZISJEPZ" jdbcType = "VARCHAR" />
+        <result column = "ZZBCXBZ" property = "ZZBCXBZ" jdbcType = "VARCHAR" />
+        <result column = "ZZISZYDB" property = "ZZISZYDB" jdbcType = "VARCHAR" />
+        <result column = "ZZYHCS_DESC" property = "ZZYHCS_DESC" jdbcType = "VARCHAR" />
+        <result column = "ZZISYP" property = "ZZISYP" jdbcType = "VARCHAR" />
+        <result column = "ZZPZWH" property = "ZZPZWH" jdbcType = "VARCHAR" />
+        <result column = "ZZPZWHQX" property = "ZZPZWHQX" jdbcType = "DATE" />
+        <result column = "ZZISDWPZ" property = "ZZISDWPZ" jdbcType = "VARCHAR" />
+        <result column = "ZZISZDYH" property = "ZZISZDYH" jdbcType = "VARCHAR" />
+        <result column = "ERSDA" property = "ERSDA" jdbcType = "DATE" />
+        <result column = "LAEDA" property = "LAEDA" jdbcType = "DATE" />
+        <result column = "ZZZCSB" property = "ZZZCSB" jdbcType = "VARCHAR" />
+        <result column = "ZZGX" property = "ZZGX" jdbcType = "VARCHAR" />
+        <result column = "ZZXZ" property = "ZZXZ" jdbcType = "VARCHAR" />
+        <result column = "ZZYSBZ" property = "ZZYSBZ" jdbcType = "VARCHAR" />
+        <result column = "ZZISDZJGM" property = "ZZISDZJGM" jdbcType = "VARCHAR" />
+        <result column = "ZZNPFV" property = "ZZNPFV" jdbcType = "VARCHAR" />
+        <result column = "ZZNPFW" property = "ZZNPFW" jdbcType = "VARCHAR" />
+        <result column = "ZZNSAL" property = "ZZNSAL" jdbcType = "VARCHAR" />
+        <result column = "RAUBE_DESC" property = "RAUBE_DESC" jdbcType = "VARCHAR" />
+        <result column = "ZZHMBZ" property = "ZZHMBZ" jdbcType = "VARCHAR" />
+        <result column = "ZZHTBZ" property = "ZZHTBZ" jdbcType = "VARCHAR" />
+        <result column = "ZZJKBZ" property = "ZZJKBZ" jdbcType = "VARCHAR" />
+        <result column = "ZZZYBZ" property = "ZZZYBZ" jdbcType = "VARCHAR" />
+        <result column = "MEINS_DESC" property = "MEINS_DESC" jdbcType = "VARCHAR" />
+        <result column = "BRGEW" property = "BRGEW" jdbcType = "DECIMAL" />
+        <result column = "NTGEW" property = "NTGEW" jdbcType = "DECIMAL" />
+        <result column = "GEWEI_DESC" property = "GEWEI_DESC" jdbcType = "VARCHAR" />
+        <result column = "LAENG" property = "LAENG" jdbcType = "DECIMAL" />
+        <result column = "BREIT" property = "BREIT" jdbcType = "DECIMAL" />
+        <result column = "HOEHE" property = "HOEHE" jdbcType = "DECIMAL" />
+        <result column = "MEABM_DESC" property = "MEABM_DESC" jdbcType = "VARCHAR" />
+        <result column = "MEINS_Z_DESC" property = "MEINS_Z_DESC" jdbcType = "VARCHAR" />
+        <result column = "BRGEW_Z" property = "BRGEW_Z" jdbcType = "DECIMAL" />
+        <result column = "NTGEW_Z" property = "NTGEW_Z" jdbcType = "DECIMAL" />
+        <result column = "GEWEI_Z_DESC" property = "GEWEI_Z_DESC" jdbcType = "VARCHAR" />
+        <result column = "LAENG_Z" property = "LAENG_Z" jdbcType = "DECIMAL" />
+        <result column = "BREIT_Z" property = "BREIT_Z" jdbcType = "DECIMAL" />
+        <result column = "HOEHE_Z" property = "HOEHE_Z" jdbcType = "DECIMAL" />
+        <result column = "MEABM_Z_DESC" property = "MEABM_Z_DESC" jdbcType = "VARCHAR" />
+        <result column = "UMBSZ_Z" property = "UMBSZ_Z" jdbcType = "DECIMAL" />
+        <result column = "MEINS_D_DESC" property = "MEINS_D_DESC" jdbcType = "VARCHAR" />
+        <result column = "BRGEW_D" property = "BRGEW_D" jdbcType = "DECIMAL" />
+        <result column = "NTGEW_D" property = "NTGEW_D" jdbcType = "DECIMAL" />
+        <result column = "GEWEI_D_DESC" property = "GEWEI_D_DESC" jdbcType = "VARCHAR" />
+        <result column = "LAENG_D" property = "LAENG_D" jdbcType = "DECIMAL" />
+        <result column = "BREIT_D" property = "BREIT_D" jdbcType = "DECIMAL" />
+        <result column = "HOEHE_D" property = "HOEHE_D" jdbcType = "DECIMAL" />
+        <result column = "MEABM_D_DESC" property = "MEABM_D_DESC" jdbcType = "VARCHAR" />
+        <result column = "UMBSZ_D" property = "UMBSZ_D" jdbcType = "NUMERIC" />
+        <result column = "ZZJQPM" property = "ZZJQPM" jdbcType = "VARCHAR" />
+        <result column = "ZZJQGG" property = "ZZJQGG" jdbcType = "VARCHAR" />
+        <result column = "ZZJQDW_DESC" property = "ZZJQDW_DESC" jdbcType = "VARCHAR" />
+        <result column = "ZZJQLSJ" property = "ZZJQLSJ" jdbcType = "DECIMAL" />
+        <result column = "ZZGJXJ" property = "ZZGJXJ" jdbcType = "DECIMAL" />
+        <result column = "ZZGJJYJ" property = "ZZGJJYJ" jdbcType = "DECIMAL" />
+        <result column = "ZZYYLSJ" property = "ZZYYLSJ" jdbcType = "DECIMAL" />
+        <result column = "ZZSGBAJ" property = "ZZSGBAJ" jdbcType = "DECIMAL" />
+        <result column = "ZZZGLSJ" property = "ZZZGLSJ" jdbcType = "DECIMAL" />
+        <result column = "ZZZDLSJ" property = "ZZZDLSJ" jdbcType = "DECIMAL" />
+        <result column = "ZZSPHYJ" property = "ZZSPHYJ" jdbcType = "DECIMAL" />
+        <result column = "ZZSPLSJ" property = "ZZSPLSJ" jdbcType = "DECIMAL" />
+        <result column = "MEINS_B" property = "MEINS_B" jdbcType = "VARCHAR" />
+    </resultMap>
+
+    <insert id="addBatchCommodity" parameterType="java.util.List" useGeneratedKeys="false">
+
+        insert into dt_commodityMaster (
+            COMMODITYID,
+            MATNR,
+            MAKTX,
+            MTART,
+            MATKL1,
+            MATKL2,
+            MATKL3,
+            MATKL,
+            ZZGG,
+            BISMT,
+            ZZGENERALNAME,
+            ZZSPZJM,
+            ZZPSBCZBZ,
+            ZZLB_ID,
+            ZZLIFNR_DES,
+            LANDX,
+            BEZEI,
+            ZZJYFW,
+            ZZISCF,
+            ZZISCFHJ,
+            ZZISYBPZ,
+            MHDHB,
+            MHDRZ,
+            ZZJX_DESC,
+            TAKLV,
+            ZZISJEPZ,
+            ZZBCXBZ,
+            ZZISZYDB,
+            ZZYHCS_DESC,
+            ZZISYP,
+            ZZPZWH,
+            ZZPZWHQX,
+            ZZISDWPZ,
+            ZZISZDYH,
+            ERSDA,
+            LAEDA,
+            ZZZCSB,
+            ZZGX,
+            ZZXZ,
+            ZZYSBZ,
+            ZZISDZJGM,
+            ZZNPFV,
+            ZZNPFW,
+            ZZNSAL,
+            RAUBE_DESC,
+            ZZHMBZ,
+            ZZHTBZ,
+            ZZJKBZ,
+            ZZZYBZ,
+            MEINS_DESC,
+            BRGEW,
+            NTGEW,
+            GEWEI_DESC,
+            LAENG,
+            BREIT,
+            HOEHE,
+            MEABM_DESC,
+            MEINS_Z_DESC,
+            BRGEW_Z,
+            NTGEW_Z,
+            GEWEI_Z_DESC,
+            LAENG_Z,
+            BREIT_Z,
+            HOEHE_Z,
+            MEABM_Z_DESC,
+            UMBSZ_Z,
+            MEINS_D_DESC,
+            BRGEW_D,
+            NTGEW_D,
+            GEWEI_D_DESC,
+            LAENG_D,
+            BREIT_D,
+            HOEHE_D,
+            MEABM_D_DESC,
+            UMBSZ_D,
+            ZZJQPM,
+            ZZJQGG,
+            ZZJQDW_DESC,
+            ZZJQLSJ,
+            ZZGJXJ,
+            ZZGJJYJ,
+            ZZYYLSJ,
+            ZZSGBAJ,
+            ZZZGLSJ,
+            ZZZDLSJ,
+            ZZSPHYJ,
+            ZZSPLSJ,
+            MEINS_B,
+            INSERTTIME
+        )
+        <foreach collection="tcommodityMasterList" item="tcommodityMaster" index="index" separator="union all" open="(" close=")">
+            select
+            #{tcommodityMaster.COMMODITYID,jdbcType=VARCHAR},
+            #{tcommodityMaster.MATNR,jdbcType=VARCHAR},
+            #{tcommodityMaster.MAKTX,jdbcType=VARCHAR},
+            #{tcommodityMaster.MTART,jdbcType=VARCHAR},
+            #{tcommodityMaster.MATKL1,jdbcType=VARCHAR},
+            #{tcommodityMaster.MATKL2,jdbcType=VARCHAR},
+            #{tcommodityMaster.MATKL3,jdbcType=VARCHAR},
+            #{tcommodityMaster.MATKL,jdbcType=VARCHAR},
+            #{tcommodityMaster.ZZGG,jdbcType=VARCHAR},
+            #{tcommodityMaster.BISMT,jdbcType=VARCHAR},
+            #{tcommodityMaster.ZZGENERALNAME,jdbcType=VARCHAR},
+            #{tcommodityMaster.ZZSPZJM,jdbcType=VARCHAR},
+            #{tcommodityMaster.ZZPSBCZBZ,jdbcType=VARCHAR},
+            #{tcommodityMaster.ZZLB_ID,jdbcType=VARCHAR},
+            #{tcommodityMaster.ZZLIFNR_DES,jdbcType=VARCHAR},
+            #{tcommodityMaster.LANDX,jdbcType=VARCHAR},
+            #{tcommodityMaster.BEZEI,jdbcType=VARCHAR},
+            #{tcommodityMaster.ZZJYFW,jdbcType=VARCHAR},
+            #{tcommodityMaster.ZZISCF,jdbcType=VARCHAR},
+            #{tcommodityMaster.ZZISCFHJ,jdbcType=VARCHAR},
+            #{tcommodityMaster.ZZISYBPZ,jdbcType=VARCHAR},
+            #{tcommodityMaster.MHDHB,jdbcType=NUMERIC},
+            #{tcommodityMaster.MHDRZ,jdbcType=NUMERIC},
+            #{tcommodityMaster.ZZJX_DESC,jdbcType=VARCHAR},
+            #{tcommodityMaster.TAKLV,jdbcType=VARCHAR},
+            #{tcommodityMaster.ZZISJEPZ,jdbcType=VARCHAR},
+            #{tcommodityMaster.ZZBCXBZ,jdbcType=VARCHAR},
+            #{tcommodityMaster.ZZISZYDB,jdbcType=VARCHAR},
+            #{tcommodityMaster.ZZYHCS_DESC,jdbcType=VARCHAR},
+            #{tcommodityMaster.ZZISYP,jdbcType=VARCHAR},
+            #{tcommodityMaster.ZZPZWH,jdbcType=VARCHAR},
+            #{tcommodityMaster.ZZPZWHQX,jdbcType=DATE},
+            #{tcommodityMaster.ZZISDWPZ,jdbcType=VARCHAR},
+            #{tcommodityMaster.ZZISZDYH,jdbcType=VARCHAR},
+            #{tcommodityMaster.ERSDA,jdbcType=DATE},
+            #{tcommodityMaster.LAEDA,jdbcType=DATE},
+            #{tcommodityMaster.ZZZCSB,jdbcType=VARCHAR},
+            #{tcommodityMaster.ZZGX,jdbcType=VARCHAR},
+            #{tcommodityMaster.ZZXZ,jdbcType=VARCHAR},
+            #{tcommodityMaster.ZZYSBZ,jdbcType=VARCHAR},
+            #{tcommodityMaster.ZZISDZJGM,jdbcType=VARCHAR},
+            #{tcommodityMaster.ZZNPFV,jdbcType=VARCHAR},
+            #{tcommodityMaster.ZZNPFW,jdbcType=VARCHAR},
+            #{tcommodityMaster.ZZNSAL,jdbcType=VARCHAR},
+            #{tcommodityMaster.RAUBE_DESC,jdbcType=VARCHAR},
+            #{tcommodityMaster.ZZHMBZ,jdbcType=VARCHAR},
+            #{tcommodityMaster.ZZHTBZ,jdbcType=VARCHAR},
+            #{tcommodityMaster.ZZJKBZ,jdbcType=VARCHAR},
+            #{tcommodityMaster.ZZZYBZ,jdbcType=VARCHAR},
+            #{tcommodityMaster.MEINS_DESC,jdbcType=VARCHAR},
+            #{tcommodityMaster.BRGEW,jdbcType=DECIMAL},
+            #{tcommodityMaster.NTGEW,jdbcType=DECIMAL},
+            #{tcommodityMaster.GEWEI_DESC,jdbcType=VARCHAR},
+            #{tcommodityMaster.LAENG,jdbcType=DECIMAL},
+            #{tcommodityMaster.BREIT,jdbcType=DECIMAL},
+            #{tcommodityMaster.HOEHE,jdbcType=DECIMAL},
+            #{tcommodityMaster.MEABM_DESC,jdbcType=VARCHAR},
+            #{tcommodityMaster.MEINS_Z_DESC,jdbcType=VARCHAR},
+            #{tcommodityMaster.BRGEW_Z,jdbcType=DECIMAL},
+            #{tcommodityMaster.NTGEW_Z,jdbcType=DECIMAL},
+            #{tcommodityMaster.GEWEI_Z_DESC,jdbcType=VARCHAR},
+            #{tcommodityMaster.LAENG_Z,jdbcType=DECIMAL},
+            #{tcommodityMaster.BREIT_Z,jdbcType=DECIMAL},
+            #{tcommodityMaster.HOEHE_Z,jdbcType=DECIMAL},
+            #{tcommodityMaster.MEABM_Z_DESC,jdbcType=VARCHAR},
+            #{tcommodityMaster.UMBSZ_Z,jdbcType=DECIMAL},
+            #{tcommodityMaster.MEINS_D_DESC,jdbcType=VARCHAR},
+            #{tcommodityMaster.BRGEW_D,jdbcType=DECIMAL},
+            #{tcommodityMaster.NTGEW_D,jdbcType=DECIMAL},
+            #{tcommodityMaster.GEWEI_D_DESC,jdbcType=VARCHAR},
+            #{tcommodityMaster.LAENG_D,jdbcType=DECIMAL},
+            #{tcommodityMaster.BREIT_D,jdbcType=DECIMAL},
+            #{tcommodityMaster.HOEHE_D,jdbcType=DECIMAL},
+            #{tcommodityMaster.MEABM_D_DESC,jdbcType=VARCHAR},
+            #{tcommodityMaster.UMBSZ_D,jdbcType=NUMERIC},
+            #{tcommodityMaster.ZZJQPM,jdbcType=VARCHAR},
+            #{tcommodityMaster.ZZJQGG,jdbcType=VARCHAR},
+            #{tcommodityMaster.ZZJQDW_DESC,jdbcType=VARCHAR},
+            #{tcommodityMaster.ZZJQLSJ,jdbcType=DECIMAL},
+            #{tcommodityMaster.ZZGJXJ,jdbcType=DECIMAL},
+            #{tcommodityMaster.ZZGJJYJ,jdbcType=DECIMAL},
+            #{tcommodityMaster.ZZYYLSJ,jdbcType=DECIMAL},
+            #{tcommodityMaster.ZZSGBAJ,jdbcType=DECIMAL},
+            #{tcommodityMaster.ZZZGLSJ,jdbcType=DECIMAL},
+            #{tcommodityMaster.ZZZDLSJ,jdbcType=DECIMAL},
+            #{tcommodityMaster.ZZSPHYJ,jdbcType=DECIMAL},
+            #{tcommodityMaster.ZZSPLSJ,jdbcType=DECIMAL},
+            #{tcommodityMaster.MEINS_B,jdbcType=VARCHAR},
+            #{tcommodityMaster.INSERTTIME,jdbcType=VARCHAR}
+        from dual
+        </foreach>
+    </insert>
+
+    <select id="findTcommmodityByMatnr" resultMap="TcommodityResultMap">
+        select * from dt_commodityMaster where MATNR in
+        <foreach collection="matnrList" item="matnr" index="index" separator="," open="(" close=")">
+            #{matnr}
+        </foreach>
+    </select>
+
+    <update id="updateBatchCommodity" parameterType="java.util.List">
+        <foreach collection="tcommodityMasterList" item="tcommodityMaster" index="index" open="begin" close=";end;" separator=";">
+            update dt_commodityMaster
+            <set>
+                <if test = "tcommodityMaster.MAKTX != null" >	MAKTX	= #{tcommodityMaster.MAKTX,jdbcType=VARCHAR},</if>
+                <if test = "tcommodityMaster.MTART != null" >	MTART	= #{tcommodityMaster.MTART,jdbcType=VARCHAR},</if>
+                <if test = "tcommodityMaster.MATKL1 != null" >	MATKL1	= #{tcommodityMaster.MATKL1,jdbcType=VARCHAR},</if>
+                <if test = "tcommodityMaster.MATKL2 != null" >	MATKL2	= #{tcommodityMaster.MATKL2,jdbcType=VARCHAR},</if>
+                <if test = "tcommodityMaster.MATKL3 != null" >	MATKL3	= #{tcommodityMaster.MATKL3,jdbcType=VARCHAR},</if>
+                <if test = "tcommodityMaster.MATKL != null" >	MATKL	= #{tcommodityMaster.MATKL,jdbcType=VARCHAR},</if>
+                <if test = "tcommodityMaster.ZZGG != null" >	ZZGG	= #{tcommodityMaster.ZZGG,jdbcType=VARCHAR},</if>
+                <if test = "tcommodityMaster.BISMT != null" >	BISMT	= #{tcommodityMaster.BISMT,jdbcType=VARCHAR},</if>
+                <if test = "tcommodityMaster.ZZGENERALNAME != null" >	ZZGENERALNAME	= #{tcommodityMaster.ZZGENERALNAME,jdbcType=VARCHAR},</if>
+                <if test = "tcommodityMaster.ZZSPZJM != null" >	ZZSPZJM	= #{tcommodityMaster.ZZSPZJM,jdbcType=VARCHAR},</if>
+                <if test = "tcommodityMaster.ZZPSBCZBZ != null" >	ZZPSBCZBZ	= #{tcommodityMaster.ZZPSBCZBZ,jdbcType=VARCHAR},</if>
+                <if test = "tcommodityMaster.ZZLB_ID != null" >	ZZLB_ID	= #{tcommodityMaster.ZZLB_ID,jdbcType=VARCHAR},</if>
+                <if test = "tcommodityMaster.ZZLIFNR_DES != null" >	ZZLIFNR_DES	= #{tcommodityMaster.ZZLIFNR_DES,jdbcType=VARCHAR},</if>
+                <if test = "tcommodityMaster.LANDX != null" >	LANDX	= #{tcommodityMaster.LANDX,jdbcType=VARCHAR},</if>
+                <if test = "tcommodityMaster.BEZEI != null" >	BEZEI	= #{tcommodityMaster.BEZEI,jdbcType=VARCHAR},</if>
+                <if test = "tcommodityMaster.ZZJYFW != null" >	ZZJYFW	= #{tcommodityMaster.ZZJYFW,jdbcType=VARCHAR},</if>
+                <if test = "tcommodityMaster.ZZISCF != null" >	ZZISCF	= #{tcommodityMaster.ZZISCF,jdbcType=VARCHAR},</if>
+                <if test = "tcommodityMaster.ZZISCFHJ != null" >	ZZISCFHJ	= #{tcommodityMaster.ZZISCFHJ,jdbcType=VARCHAR},</if>
+                <if test = "tcommodityMaster.ZZISYBPZ != null" >	ZZISYBPZ	= #{tcommodityMaster.ZZISYBPZ,jdbcType=VARCHAR},</if>
+                <if test = "tcommodityMaster.MHDHB != null" >	MHDHB	= #{tcommodityMaster.MHDHB,jdbcType=NUMERIC},</if>
+                <if test = "tcommodityMaster.MHDRZ != null" >	MHDRZ	= #{tcommodityMaster.MHDRZ,jdbcType=NUMERIC},</if>
+                <if test = "tcommodityMaster.ZZJX_DESC != null" >	ZZJX_DESC	= #{tcommodityMaster.ZZJX_DESC,jdbcType=VARCHAR},</if>
+                <if test = "tcommodityMaster.TAKLV != null" >	TAKLV	= #{tcommodityMaster.TAKLV,jdbcType=VARCHAR},</if>
+                <if test = "tcommodityMaster.ZZISJEPZ != null" >	ZZISJEPZ	= #{tcommodityMaster.ZZISJEPZ,jdbcType=VARCHAR},</if>
+                <if test = "tcommodityMaster.ZZBCXBZ != null" >	ZZBCXBZ	= #{tcommodityMaster.ZZBCXBZ,jdbcType=VARCHAR},</if>
+                <if test = "tcommodityMaster.ZZISZYDB != null" >	ZZISZYDB	= #{tcommodityMaster.ZZISZYDB,jdbcType=VARCHAR},</if>
+                <if test = "tcommodityMaster.ZZYHCS_DESC != null" >	ZZYHCS_DESC	= #{tcommodityMaster.ZZYHCS_DESC,jdbcType=VARCHAR},</if>
+                <if test = "tcommodityMaster.ZZISYP != null" >	ZZISYP	= #{tcommodityMaster.ZZISYP,jdbcType=VARCHAR},</if>
+                <if test = "tcommodityMaster.ZZPZWH != null" >	ZZPZWH	= #{tcommodityMaster.ZZPZWH,jdbcType=VARCHAR},</if>
+                <if test = "tcommodityMaster.ZZPZWHQX != null" >	ZZPZWHQX	= #{tcommodityMaster.ZZPZWHQX,jdbcType=DATE},</if>
+                <if test = "tcommodityMaster.ZZISDWPZ != null" >	ZZISDWPZ	= #{tcommodityMaster.ZZISDWPZ,jdbcType=VARCHAR},</if>
+                <if test = "tcommodityMaster.ZZISZDYH != null" >	ZZISZDYH	= #{tcommodityMaster.ZZISZDYH,jdbcType=VARCHAR},</if>
+                <if test = "tcommodityMaster.ERSDA != null" >	ERSDA	= #{tcommodityMaster.ERSDA,jdbcType=DATE},</if>
+                <if test = "tcommodityMaster.LAEDA != null" >	LAEDA	= #{tcommodityMaster.LAEDA,jdbcType=DATE},</if>
+                <if test = "tcommodityMaster.ZZZCSB != null" >	ZZZCSB	= #{tcommodityMaster.ZZZCSB,jdbcType=VARCHAR},</if>
+                <if test = "tcommodityMaster.ZZGX != null" >	ZZGX	= #{tcommodityMaster.ZZGX,jdbcType=VARCHAR},</if>
+                <if test = "tcommodityMaster.ZZXZ != null" >	ZZXZ	= #{tcommodityMaster.ZZXZ,jdbcType=VARCHAR},</if>
+                <if test = "tcommodityMaster.ZZYSBZ != null" >	ZZYSBZ	= #{tcommodityMaster.ZZYSBZ,jdbcType=VARCHAR},</if>
+                <if test = "tcommodityMaster.ZZISDZJGM != null" >	ZZISDZJGM	= #{tcommodityMaster.ZZISDZJGM,jdbcType=VARCHAR},</if>
+                <if test = "tcommodityMaster.ZZNPFV != null" >	ZZNPFV	= #{tcommodityMaster.ZZNPFV,jdbcType=VARCHAR},</if>
+                <if test = "tcommodityMaster.ZZNPFW != null" >	ZZNPFW	= #{tcommodityMaster.ZZNPFW,jdbcType=VARCHAR},</if>
+                <if test = "tcommodityMaster.ZZNSAL != null" >	ZZNSAL	= #{tcommodityMaster.ZZNSAL,jdbcType=VARCHAR},</if>
+                <if test = "tcommodityMaster.RAUBE_DESC != null" >	RAUBE_DESC	= #{tcommodityMaster.RAUBE_DESC,jdbcType=VARCHAR},</if>
+                <if test = "tcommodityMaster.ZZHMBZ != null" >	ZZHMBZ	= #{tcommodityMaster.ZZHMBZ,jdbcType=VARCHAR},</if>
+                <if test = "tcommodityMaster.ZZHTBZ != null" >	ZZHTBZ	= #{tcommodityMaster.ZZHTBZ,jdbcType=VARCHAR},</if>
+                <if test = "tcommodityMaster.ZZJKBZ != null" >	ZZJKBZ	= #{tcommodityMaster.ZZJKBZ,jdbcType=VARCHAR},</if>
+                <if test = "tcommodityMaster.ZZZYBZ != null" >	ZZZYBZ	= #{tcommodityMaster.ZZZYBZ,jdbcType=VARCHAR},</if>
+                <if test = "tcommodityMaster.MEINS_DESC != null" >	MEINS_DESC	= #{tcommodityMaster.MEINS_DESC,jdbcType=VARCHAR},</if>
+                <if test = "tcommodityMaster.BRGEW != null" >	BRGEW	= #{tcommodityMaster.BRGEW,jdbcType=DECIMAL},</if>
+                <if test = "tcommodityMaster.NTGEW != null" >	NTGEW	= #{tcommodityMaster.NTGEW,jdbcType=DECIMAL},</if>
+                <if test = "tcommodityMaster.GEWEI_DESC != null" >	GEWEI_DESC	= #{tcommodityMaster.GEWEI_DESC,jdbcType=VARCHAR},</if>
+                <if test = "tcommodityMaster.LAENG != null" >	LAENG	= #{tcommodityMaster.LAENG,jdbcType=DECIMAL},</if>
+                <if test = "tcommodityMaster.BREIT != null" >	BREIT	= #{tcommodityMaster.BREIT,jdbcType=DECIMAL},</if>
+                <if test = "tcommodityMaster.HOEHE != null" >	HOEHE	= #{tcommodityMaster.HOEHE,jdbcType=DECIMAL},</if>
+                <if test = "tcommodityMaster.MEABM_DESC != null" >	MEABM_DESC	= #{tcommodityMaster.MEABM_DESC,jdbcType=VARCHAR},</if>
+                <if test = "tcommodityMaster.MEINS_Z_DESC != null" >	MEINS_Z_DESC	= #{tcommodityMaster.MEINS_Z_DESC,jdbcType=VARCHAR},</if>
+                <if test = "tcommodityMaster.BRGEW_Z != null" >	BRGEW_Z	= #{tcommodityMaster.BRGEW_Z,jdbcType=DECIMAL},</if>
+                <if test = "tcommodityMaster.NTGEW_Z != null" >	NTGEW_Z	= #{tcommodityMaster.NTGEW_Z,jdbcType=DECIMAL},</if>
+                <if test = "tcommodityMaster.GEWEI_Z_DESC != null" >	GEWEI_Z_DESC	= #{tcommodityMaster.GEWEI_Z_DESC,jdbcType=VARCHAR},</if>
+                <if test = "tcommodityMaster.LAENG_Z != null" >	LAENG_Z	= #{tcommodityMaster.LAENG_Z,jdbcType=DECIMAL},</if>
+                <if test = "tcommodityMaster.BREIT_Z != null" >	BREIT_Z	= #{tcommodityMaster.BREIT_Z,jdbcType=DECIMAL},</if>
+                <if test = "tcommodityMaster.HOEHE_Z != null" >	HOEHE_Z	= #{tcommodityMaster.HOEHE_Z,jdbcType=DECIMAL},</if>
+                <if test = "tcommodityMaster.MEABM_Z_DESC != null" >	MEABM_Z_DESC	= #{tcommodityMaster.MEABM_Z_DESC,jdbcType=VARCHAR},</if>
+                <if test = "tcommodityMaster.UMBSZ_Z != null" >	UMBSZ_Z	= #{tcommodityMaster.UMBSZ_Z,jdbcType=DECIMAL},</if>
+                <if test = "tcommodityMaster.MEINS_D_DESC != null" >	MEINS_D_DESC	= #{tcommodityMaster.MEINS_D_DESC,jdbcType=VARCHAR},</if>
+                <if test = "tcommodityMaster.BRGEW_D != null" >	BRGEW_D	= #{tcommodityMaster.BRGEW_D,jdbcType=DECIMAL},</if>
+                <if test = "tcommodityMaster.NTGEW_D != null" >	NTGEW_D	= #{tcommodityMaster.NTGEW_D,jdbcType=DECIMAL},</if>
+                <if test = "tcommodityMaster.GEWEI_D_DESC != null" >	GEWEI_D_DESC	= #{tcommodityMaster.GEWEI_D_DESC,jdbcType=VARCHAR},</if>
+                <if test = "tcommodityMaster.LAENG_D != null" >	LAENG_D	= #{tcommodityMaster.LAENG_D,jdbcType=DECIMAL},</if>
+                <if test = "tcommodityMaster.BREIT_D != null" >	BREIT_D	= #{tcommodityMaster.BREIT_D,jdbcType=DECIMAL},</if>
+                <if test = "tcommodityMaster.HOEHE_D != null" >	HOEHE_D	= #{tcommodityMaster.HOEHE_D,jdbcType=DECIMAL},</if>
+                <if test = "tcommodityMaster.MEABM_D_DESC != null" >	MEABM_D_DESC	= #{tcommodityMaster.MEABM_D_DESC,jdbcType=VARCHAR},</if>
+                <if test = "tcommodityMaster.UMBSZ_D != null" >	UMBSZ_D	= #{tcommodityMaster.UMBSZ_D,jdbcType=NUMERIC},</if>
+                <if test = "tcommodityMaster.ZZJQPM != null" >	ZZJQPM	= #{tcommodityMaster.ZZJQPM,jdbcType=VARCHAR},</if>
+                <if test = "tcommodityMaster.ZZJQGG != null" >	ZZJQGG	= #{tcommodityMaster.ZZJQGG,jdbcType=VARCHAR},</if>
+                <if test = "tcommodityMaster.ZZJQDW_DESC != null" >	ZZJQDW_DESC	= #{tcommodityMaster.ZZJQDW_DESC,jdbcType=VARCHAR},</if>
+                <if test = "tcommodityMaster.ZZJQLSJ != null" >	ZZJQLSJ	= #{tcommodityMaster.ZZJQLSJ,jdbcType=DECIMAL},</if>
+                <if test = "tcommodityMaster.ZZGJXJ != null" >	ZZGJXJ	= #{tcommodityMaster.ZZGJXJ,jdbcType=DECIMAL},</if>
+                <if test = "tcommodityMaster.ZZGJJYJ != null" >	ZZGJJYJ	= #{tcommodityMaster.ZZGJJYJ,jdbcType=DECIMAL},</if>
+                <if test = "tcommodityMaster.ZZYYLSJ != null" >	ZZYYLSJ	= #{tcommodityMaster.ZZYYLSJ,jdbcType=DECIMAL},</if>
+                <if test = "tcommodityMaster.ZZSGBAJ != null" >	ZZSGBAJ	= #{tcommodityMaster.ZZSGBAJ,jdbcType=DECIMAL},</if>
+                <if test = "tcommodityMaster.ZZZGLSJ != null" >	ZZZGLSJ	= #{tcommodityMaster.ZZZGLSJ,jdbcType=DECIMAL},</if>
+                <if test = "tcommodityMaster.ZZZDLSJ != null" >	ZZZDLSJ	= #{tcommodityMaster.ZZZDLSJ,jdbcType=DECIMAL},</if>
+                <if test = "tcommodityMaster.ZZSPHYJ != null" >	ZZSPHYJ	= #{tcommodityMaster.ZZSPHYJ,jdbcType=DECIMAL},</if>
+                <if test = "tcommodityMaster.ZZSPLSJ != null" >	ZZSPLSJ	= #{tcommodityMaster.ZZSPLSJ,jdbcType=DECIMAL},</if>
+                <if test = "tcommodityMaster.MEINS_B != null" >	MEINS_B	= #{tcommodityMaster.MEINS_B,jdbcType=VARCHAR},</if>
+                <if test = "tcommodityMaster.UPDATETIME != null" >	UPDATETIME	= #{tcommodityMaster.UPDATETIME,jdbcType=VARCHAR},</if>
+            </set>
+            where MATNR = #{tcommodityMaster.MATNR,jdbcType=VARCHAR}
+        </foreach>
+    </update>
+
+
+    <resultMap id="DrugStoresResultMap" type="com.sypm.webapi.bean.DrugStores">
+        <result column="DRUGSTOREID"	property="DRUGSTOREID" jdbcType="VARCHAR" />
+        <result column="WERKS"	property="WERKS" jdbcType="VARCHAR" />
+        <result column="NAME1"	property="NAME1" jdbcType="VARCHAR" />
+        <result column="NAME2"	property="NAME2" jdbcType="VARCHAR" />
+        <result column="KUNNR"	property="KUNNR" jdbcType="VARCHAR" />
+        <result column="BUKRS"	property="BUKRS" jdbcType="VARCHAR" />
+        <result column="VKORG"	property="VKORG" jdbcType="VARCHAR" />
+        <result column="VKBUR"	property="VKBUR" jdbcType="VARCHAR" />
+        <result column="STRAS"	property="STRAS" jdbcType="VARCHAR" />
+        <result column="TEL_NUMBER"	property="TEL_NUMBER" jdbcType="VARCHAR" />
+        <result column="POST_CODE1"	property="POST_CODE1" jdbcType="VARCHAR" />
+        <result column="CITY1"	property="CITY1" jdbcType="VARCHAR" />
+        <result column="COUNTRY"	property="COUNTRY" jdbcType="VARCHAR" />
+        <result column="REGION"	property="REGION" jdbcType="VARCHAR" />
+        <result column="KTOKD"	property="KTOKD" jdbcType="VARCHAR" />
+        <result column="ZZYXDB"	property="ZZYXDB" jdbcType="VARCHAR" />
+        <result column="ZZSHDZ"	property="ZZSHDZ" jdbcType="VARCHAR" />
+        <result column="ZZCYKH"	property="ZZCYKH" jdbcType="VARCHAR" />
+        <result column="ZZBBFL"	property="ZZBBFL" jdbcType="VARCHAR" />
+        <result column="ZZFZSX"	property="ZZFZSX" jdbcType="VARCHAR" />
+        <result column="ZZSJQY"	property="ZZSJQY" jdbcType="VARCHAR" />
+        <result column="ZZSFKH"	property="ZZSFKH" jdbcType="VARCHAR" />
+        <result column="ZZZLMJ"	property="ZZZLMJ" jdbcType="VARCHAR" />
+        <result column="ZZMCMJ"	property="ZZMCMJ" jdbcType="VARCHAR" />
+        <result column="ZZSYMJ"	property="ZZSYMJ" jdbcType="VARCHAR" />
+        <result column="ZZKYRQ"	property="ZZKYRQ" jdbcType="VARCHAR" />
+        <result column="ZZGBRQ"	property="ZZGBRQ" jdbcType="VARCHAR" />
+        <result column="ZZGZRQ"	property="ZZGZRQ" jdbcType="VARCHAR" />
+        <result column="ZZBQRQ"	property="ZZBQRQ" jdbcType="VARCHAR" />
+        <result column="ZZQY"	property="ZZQY" jdbcType="VARCHAR" />
+        <result column="ZZSQ"	property="ZZSQ" jdbcType="VARCHAR" />
+        <result column="ZZDX"	property="ZZDX" jdbcType="VARCHAR" />
+        <result column="ZZSFSY"	property="ZZSFSY" jdbcType="VARCHAR" />
+        <result column="ZZYT"	property="ZZYT" jdbcType="VARCHAR" />
+        <result column="ZZYBLX"	property="ZZYBLX" jdbcType="VARCHAR" />
+        <result column="ZZSJDC"	property="ZZSJDC" jdbcType="VARCHAR" />
+        <result column="ZZPSDC"	property="ZZPSDC" jdbcType="VARCHAR" />
+        <result column="ZZDTPMD"	property="ZZDTPMD" jdbcType="VARCHAR" />
+        <result column="ZTHFS"	property="ZTHFS" jdbcType="VARCHAR" />
+        <result column="ZZSQY"	property="ZZSQY" jdbcType="VARCHAR" />
+        <result column="ZZSDY"	property="ZZSDY" jdbcType="VARCHAR" />
+        <result column="ZZWMBB"	property="ZZWMBB" jdbcType="VARCHAR" />
+        <result column="SPERR"	property="SPERR" jdbcType="VARCHAR" />
+        <result column="LOEVM"	property="LOEVM" jdbcType="VARCHAR" />
+        <result column="CASSD"	property="CASSD" jdbcType="VARCHAR" />
+        <result column="ZJYFW"	property="ZJYFW" jdbcType="VARCHAR" />
+        <result column="ZZZSLX"	property="ZZZSLX" jdbcType="VARCHAR" />
+        <result column="ZZZSBH"	property="ZZZSBH" jdbcType="VARCHAR" />
+        <result column="ZZYXQS"	property="ZZYXQS" jdbcType="DATE" />
+        <result column="ZZYXQZ"	property="ZZYXQZ" jdbcType="DATE" />
+        <result column="ZZLXR"	property="ZZLXR" jdbcType="VARCHAR" />
+        <result column="ZZSFZH"	property="ZZSFZH" jdbcType="VARCHAR" />
+        <result column="ZZFZJG"	property="ZZFZJG" jdbcType="VARCHAR" />
+        <result column="ZZLXFS"	property="ZZLXFS" jdbcType="VARCHAR" />
+        <result column="ZZFDDBR"	property="ZZFDDBR" jdbcType="VARCHAR" />
+    </resultMap>
+
+    <insert id="addBatchStores" parameterType="java.util.List" useGeneratedKeys="false">
+
+        insert into dt_drugStores(
+            DRUGSTOREID,
+            WERKS,
+            NAME1,
+            NAME2,
+            KUNNR,
+            BUKRS,
+            VKORG,
+            VKBUR,
+            STRAS,
+            TEL_NUMBER,
+            POST_CODE1,
+            CITY1,
+            COUNTRY,
+            REGION,
+            KTOKD,
+            ZZYXDB,
+            ZZSHDZ,
+            ZZCYKH,
+            ZZBBFL,
+            ZZFZSX,
+            ZZSJQY,
+            ZZSFKH,
+            ZZZLMJ,
+            ZZMCMJ,
+            ZZSYMJ,
+            ZZKYRQ,
+            ZZGBRQ,
+            ZZGZRQ,
+            ZZBQRQ,
+            ZZQY,
+            ZZSQ,
+            ZZDX,
+            ZZSFSY,
+            ZZYT,
+            ZZYBLX,
+            ZZSJDC,
+            ZZPSDC,
+            ZZDTPMD,
+            ZTHFS,
+            ZZSQY,
+            ZZSDY,
+            ZZWMBB,
+            SPERR,
+            LOEVM,
+            CASSD,
+            ZJYFW,
+            ZZZSLX,
+            ZZZSBH,
+            ZZYXQS,
+            ZZYXQZ,
+            ZZLXR,
+            ZZSFZH,
+            ZZFZJG,
+            ZZLXFS,
+            ZZFDDBR,
+            INSERTTIME
+        )
+        <foreach collection="drugStoresList" item="drugStore" separator="union all" close=")" open="(" index="index">
+        select
+            #{drugStore.DRUGSTOREID,jdbcType=VARCHAR},
+            #{drugStore.WERKS,jdbcType=VARCHAR},
+            #{drugStore.NAME1,jdbcType=VARCHAR},
+            #{drugStore.NAME2,jdbcType=VARCHAR},
+            #{drugStore.KUNNR,jdbcType=VARCHAR},
+            #{drugStore.BUKRS,jdbcType=VARCHAR},
+            #{drugStore.VKORG,jdbcType=VARCHAR},
+            #{drugStore.VKBUR,jdbcType=VARCHAR},
+            #{drugStore.STRAS,jdbcType=VARCHAR},
+            #{drugStore.TEL_NUMBER,jdbcType=VARCHAR},
+            #{drugStore.POST_CODE1,jdbcType=VARCHAR},
+            #{drugStore.CITY1,jdbcType=VARCHAR},
+            #{drugStore.COUNTRY,jdbcType=VARCHAR},
+            #{drugStore.REGION,jdbcType=VARCHAR},
+            #{drugStore.KTOKD,jdbcType=VARCHAR},
+            #{drugStore.ZZYXDB,jdbcType=VARCHAR},
+            #{drugStore.ZZSHDZ,jdbcType=VARCHAR},
+            #{drugStore.ZZCYKH,jdbcType=VARCHAR},
+            #{drugStore.ZZBBFL,jdbcType=VARCHAR},
+            #{drugStore.ZZFZSX,jdbcType=VARCHAR},
+            #{drugStore.ZZSJQY,jdbcType=VARCHAR},
+            #{drugStore.ZZSFKH,jdbcType=VARCHAR},
+            #{drugStore.ZZZLMJ,jdbcType=VARCHAR},
+            #{drugStore.ZZMCMJ,jdbcType=VARCHAR},
+            #{drugStore.ZZSYMJ,jdbcType=VARCHAR},
+            #{drugStore.ZZKYRQ,jdbcType=VARCHAR},
+            #{drugStore.ZZGBRQ,jdbcType=VARCHAR},
+            #{drugStore.ZZGZRQ,jdbcType=VARCHAR},
+            #{drugStore.ZZBQRQ,jdbcType=VARCHAR},
+            #{drugStore.ZZQY,jdbcType=VARCHAR},
+            #{drugStore.ZZSQ,jdbcType=VARCHAR},
+            #{drugStore.ZZDX,jdbcType=VARCHAR},
+            #{drugStore.ZZSFSY,jdbcType=VARCHAR},
+            #{drugStore.ZZYT,jdbcType=VARCHAR},
+            #{drugStore.ZZYBLX,jdbcType=VARCHAR},
+            #{drugStore.ZZSJDC,jdbcType=VARCHAR},
+            #{drugStore.ZZPSDC,jdbcType=VARCHAR},
+            #{drugStore.ZZDTPMD,jdbcType=VARCHAR},
+            #{drugStore.ZTHFS,jdbcType=VARCHAR},
+            #{drugStore.ZZSQY,jdbcType=VARCHAR},
+            #{drugStore.ZZSDY,jdbcType=VARCHAR},
+            #{drugStore.ZZWMBB,jdbcType=VARCHAR},
+            #{drugStore.SPERR,jdbcType=VARCHAR},
+            #{drugStore.LOEVM,jdbcType=VARCHAR},
+            #{drugStore.CASSD,jdbcType=VARCHAR},
+            #{drugStore.ZJYFW,jdbcType=VARCHAR},
+            #{drugStore.ZZZSLX,jdbcType=VARCHAR},
+            #{drugStore.ZZZSBH,jdbcType=VARCHAR},
+            #{drugStore.ZZYXQS,jdbcType=DATE},
+            #{drugStore.ZZYXQZ,jdbcType=DATE},
+            #{drugStore.ZZLXR,jdbcType=VARCHAR},
+            #{drugStore.ZZSFZH,jdbcType=VARCHAR},
+            #{drugStore.ZZFZJG,jdbcType=VARCHAR},
+            #{drugStore.ZZLXFS,jdbcType=VARCHAR},
+            #{drugStore.ZZFDDBR,jdbcType=VARCHAR},
+            #{drugStore.INSERTTIME,jdbcType=VARCHAR}
+        from dual
+        </foreach>
+    </insert>
+
+    <select id="findDrugStoresByWerks" resultMap="DrugStoresResultMap">
+        select * from dt_drugStores where WERKS in
+        <foreach collection="werksList" item="werks" index="index" separator="," open="(" close=")">
+            #{werks}
+        </foreach>
+    </select>
+
+    <update id="updateBatchStores" parameterType="java.util.List">
+        <foreach collection="drugStoresList" item="drugStore" index="index" open="begin" close=";end;" separator=";">
+            update dt_drugStores
+            <set>
+                <if test="drugStore.NAME1 != null">	NAME1 =#{drugStore.NAME1,jdbcType=VARCHAR},</if>
+                <if test="drugStore.NAME2 != null">	NAME2 =#{drugStore.NAME2,jdbcType=VARCHAR},</if>
+                <if test="drugStore.KUNNR != null">	KUNNR =#{drugStore.KUNNR,jdbcType=VARCHAR},</if>
+                <if test="drugStore.BUKRS != null">	BUKRS =#{drugStore.BUKRS,jdbcType=VARCHAR},</if>
+                <if test="drugStore.VKORG != null">	VKORG =#{drugStore.VKORG,jdbcType=VARCHAR},</if>
+                <if test="drugStore.VKBUR != null">	VKBUR =#{drugStore.VKBUR,jdbcType=VARCHAR},</if>
+                <if test="drugStore.STRAS != null">	STRAS =#{drugStore.STRAS,jdbcType=VARCHAR},</if>
+                <if test="drugStore.TEL_NUMBER != null">	TEL_NUMBER =#{drugStore.TEL_NUMBER,jdbcType=VARCHAR},</if>
+                <if test="drugStore.POST_CODE1 != null">	POST_CODE1 =#{drugStore.POST_CODE1,jdbcType=VARCHAR},</if>
+                <if test="drugStore.CITY1 != null">	CITY1 =#{drugStore.CITY1,jdbcType=VARCHAR},</if>
+                <if test="drugStore.COUNTRY != null">	COUNTRY =#{drugStore.COUNTRY,jdbcType=VARCHAR},</if>
+                <if test="drugStore.REGION != null">	REGION =#{drugStore.REGION,jdbcType=VARCHAR},</if>
+                <if test="drugStore.KTOKD != null">	KTOKD =#{drugStore.KTOKD,jdbcType=VARCHAR},</if>
+                <if test="drugStore.ZZYXDB != null">	ZZYXDB =#{drugStore.ZZYXDB,jdbcType=VARCHAR},</if>
+                <if test="drugStore.ZZSHDZ != null">	ZZSHDZ =#{drugStore.ZZSHDZ,jdbcType=VARCHAR},</if>
+                <if test="drugStore.ZZCYKH != null">	ZZCYKH =#{drugStore.ZZCYKH,jdbcType=VARCHAR},</if>
+                <if test="drugStore.ZZBBFL != null">	ZZBBFL =#{drugStore.ZZBBFL,jdbcType=VARCHAR},</if>
+                <if test="drugStore.ZZFZSX != null">	ZZFZSX =#{drugStore.ZZFZSX,jdbcType=VARCHAR},</if>
+                <if test="drugStore.ZZSJQY != null">	ZZSJQY =#{drugStore.ZZSJQY,jdbcType=VARCHAR},</if>
+                <if test="drugStore.ZZSFKH != null">	ZZSFKH =#{drugStore.ZZSFKH,jdbcType=VARCHAR},</if>
+                <if test="drugStore.ZZZLMJ != null">	ZZZLMJ =#{drugStore.ZZZLMJ,jdbcType=VARCHAR},</if>
+                <if test="drugStore.ZZMCMJ != null">	ZZMCMJ =#{drugStore.ZZMCMJ,jdbcType=VARCHAR},</if>
+                <if test="drugStore.ZZSYMJ != null">	ZZSYMJ =#{drugStore.ZZSYMJ,jdbcType=VARCHAR},</if>
+                <if test="drugStore.ZZKYRQ != null">	ZZKYRQ =#{drugStore.ZZKYRQ,jdbcType=VARCHAR},</if>
+                <if test="drugStore.ZZGBRQ != null">	ZZGBRQ =#{drugStore.ZZGBRQ,jdbcType=VARCHAR},</if>
+                <if test="drugStore.ZZGZRQ != null">	ZZGZRQ =#{drugStore.ZZGZRQ,jdbcType=VARCHAR},</if>
+                <if test="drugStore.ZZBQRQ != null">	ZZBQRQ =#{drugStore.ZZBQRQ,jdbcType=VARCHAR},</if>
+                <if test="drugStore.ZZQY != null">	ZZQY =#{drugStore.ZZQY,jdbcType=VARCHAR},</if>
+                <if test="drugStore.ZZSQ != null">	ZZSQ =#{drugStore.ZZSQ,jdbcType=VARCHAR},</if>
+                <if test="drugStore.ZZDX != null">	ZZDX =#{drugStore.ZZDX,jdbcType=VARCHAR},</if>
+                <if test="drugStore.ZZSFSY != null">	ZZSFSY =#{drugStore.ZZSFSY,jdbcType=VARCHAR},</if>
+                <if test="drugStore.ZZYT != null">	ZZYT =#{drugStore.ZZYT,jdbcType=VARCHAR},</if>
+                <if test="drugStore.ZZYBLX != null">	ZZYBLX =#{drugStore.ZZYBLX,jdbcType=VARCHAR},</if>
+                <if test="drugStore.ZZSJDC != null">	ZZSJDC =#{drugStore.ZZSJDC,jdbcType=VARCHAR},</if>
+                <if test="drugStore.ZZPSDC != null">	ZZPSDC =#{drugStore.ZZPSDC,jdbcType=VARCHAR},</if>
+                <if test="drugStore.ZZDTPMD != null">	ZZDTPMD =#{drugStore.ZZDTPMD,jdbcType=VARCHAR},</if>
+                <if test="drugStore.ZTHFS != null">	ZTHFS =#{drugStore.ZTHFS,jdbcType=VARCHAR},</if>
+                <if test="drugStore.ZZSQY != null">	ZZSQY =#{drugStore.ZZSQY,jdbcType=VARCHAR},</if>
+                <if test="drugStore.ZZSDY != null">	ZZSDY =#{drugStore.ZZSDY,jdbcType=VARCHAR},</if>
+                <if test="drugStore.ZZWMBB != null">	ZZWMBB =#{drugStore.ZZWMBB,jdbcType=VARCHAR},</if>
+                <if test="drugStore.SPERR != null">	SPERR =#{drugStore.SPERR,jdbcType=VARCHAR},</if>
+                <if test="drugStore.LOEVM != null">	LOEVM =#{drugStore.LOEVM,jdbcType=VARCHAR},</if>
+                <if test="drugStore.CASSD != null">	CASSD =#{drugStore.CASSD,jdbcType=VARCHAR},</if>
+                <if test="drugStore.ZJYFW != null">	ZJYFW =#{drugStore.ZJYFW,jdbcType=VARCHAR},</if>
+                <if test="drugStore.ZZZSLX != null">	ZZZSLX =#{drugStore.ZZZSLX,jdbcType=VARCHAR},</if>
+                <if test="drugStore.ZZZSBH != null">	ZZZSBH =#{drugStore.ZZZSBH,jdbcType=VARCHAR},</if>
+                <if test="drugStore.ZZYXQS != null">	ZZYXQS =#{drugStore.ZZYXQS,jdbcType=DATE},</if>
+                <if test="drugStore.ZZYXQZ != null">	ZZYXQZ =#{drugStore.ZZYXQZ,jdbcType=DATE},</if>
+                <if test="drugStore.ZZLXR != null">	ZZLXR =#{drugStore.ZZLXR,jdbcType=VARCHAR},</if>
+                <if test="drugStore.ZZSFZH != null">	ZZSFZH =#{drugStore.ZZSFZH,jdbcType=VARCHAR},</if>
+                <if test="drugStore.ZZFZJG != null">	ZZFZJG =#{drugStore.ZZFZJG,jdbcType=VARCHAR},</if>
+                <if test="drugStore.ZZLXFS != null">	ZZLXFS =#{drugStore.ZZLXFS,jdbcType=VARCHAR},</if>
+                <if test="drugStore.ZZFDDBR != null">	ZZFDDBR =#{drugStore.ZZFDDBR,jdbcType=VARCHAR},</if>
+                <if test="drugStore.UPDATETIME != null">	UPDATETIME =#{drugStore.UPDATETIME,jdbcType=VARCHAR},</if>
+            </set>
+            where WERKS = #{drugStore.WERKS,jdbcType=VARCHAR}
+        </foreach>
+    </update>
+
+
+    <resultMap id="ClienteleResultMap" type="com.sypm.webapi.bean.Clientele">
+        <result column="KUNNR"	property="KUNNR" jdbcType="VARCHAR" />
+        <result column="NAME2"	property="NAME2" jdbcType="VARCHAR" />
+        <result column="SORT1"	property="SORT1" jdbcType="VARCHAR" />
+        <result column="SORT2"	property="SORT2" jdbcType="VARCHAR" />
+        <result column="STREET"	property="STREET" jdbcType="VARCHAR" />
+        <result column="ZZKHXS"	property="ZZKHXS" jdbcType="VARCHAR" />
+        <result column="ZZSHDZ"	property="ZZSHDZ" jdbcType="VARCHAR" />
+        <result column="TEL_NUMBER"	property="TEL_NUMBER" jdbcType="VARCHAR" />
+        <result column="ZPICKER_K"	property="ZPICKER_K" jdbcType="VARCHAR" />
+        <result column="POST_CODE1"	property="POST_CODE1" jdbcType="VARCHAR" />
+        <result column="CITY1"	property="CITY1" jdbcType="VARCHAR" />
+        <result column="COUNTRY"	property="COUNTRY" jdbcType="VARCHAR" />
+        <result column="REGION"	property="REGION" jdbcType="VARCHAR" />
+        <result column="KLIMK"	property="KLIMK" jdbcType="VARCHAR" />
+        <result column="ZTERM"	property="ZTERM" jdbcType="VARCHAR" />
+        <result column="KTOKD"	property="KTOKD" jdbcType="VARCHAR" />
+        <result column="ZFPLX"	property="ZFPLX" jdbcType="VARCHAR" />
+        <result column="ZZRYW"	property="ZZRYW" jdbcType="VARCHAR" />
+        <result column="ZZRKP"	property="ZZRKP" jdbcType="VARCHAR" />
+        <result column="ZZRJL"	property="ZZRJL" jdbcType="VARCHAR" />
+        <result column="SPERR"	property="SPERR" jdbcType="VARCHAR" />
+        <result column="LOEVM"	property="LOEVM" jdbcType="VARCHAR" />
+        <result column="CASSD"	property="CASSD" jdbcType="VARCHAR" />
+        <result column="ZJYFW"	property="ZJYFW" jdbcType="VARCHAR" />
+        <result column="ZZZSLX"	property="ZZZSLX" jdbcType="VARCHAR" />
+        <result column="ZZZSBH"	property="ZZZSBH" jdbcType="VARCHAR" />
+        <result column="ZZYXQS"	property="ZZYXQS" jdbcType="VARCHAR" />
+        <result column="ZZYXQZ"	property="ZZYXQZ" jdbcType="VARCHAR" />
+        <result column="ZZLXR"	property="ZZLXR" jdbcType="VARCHAR" />
+        <result column="ZZSFZH"	property="ZZSFZH" jdbcType="VARCHAR" />
+        <result column="ZZFZJG"	property="ZZFZJG" jdbcType="VARCHAR" />
+        <result column="ZZLXFS"	property="ZZLXFS" jdbcType="VARCHAR" />
+        <result column="ZZFDDBR"	property="ZZFDDBR" jdbcType="VARCHAR" />
+    </resultMap>
+
+    <insert id="addBatchClientele" parameterType="java.util.List" useGeneratedKeys="false">
+
+        insert into dt_clientele(
+            CLIENTID,
+            KUNNR,
+            NAME2,
+            SORT1,
+            SORT2,
+            STREET,
+            ZZKHXS,
+            ZZSHDZ,
+            TEL_NUMBER,
+            ZPICKER_K,
+            POST_CODE1,
+            CITY1,
+            COUNTRY,
+            REGION,
+            KLIMK,
+            ZTERM,
+            KTOKD,
+            ZFPLX,
+            ZZRYW,
+            ZZRKP,
+            ZZRJL,
+            SPERR,
+            LOEVM,
+            CASSD,
+            ZJYFW,
+            ZZZSLX,
+            ZZZSBH,
+            ZZYXQS,
+            ZZYXQZ,
+            ZZLXR,
+            ZZSFZH,
+            ZZFZJG,
+            ZZLXFS,
+            ZZFDDBR,
+            UPDATETIME,
+            INSERTTIME
+        )
+        <foreach collection="clienteleList" separator="union all" item="clientele" open="(" close=")" index="index">
+        select
+            #{clientele.CLIENTID,jdbcType=VARCHAR},
+            #{clientele.KUNNR,jdbcType=VARCHAR},
+            #{clientele.NAME2,jdbcType=VARCHAR},
+            #{clientele.SORT1,jdbcType=VARCHAR},
+            #{clientele.SORT2,jdbcType=VARCHAR},
+            #{clientele.STREET,jdbcType=VARCHAR},
+            #{clientele.ZZKHXS,jdbcType=VARCHAR},
+            #{clientele.ZZSHDZ,jdbcType=VARCHAR},
+            #{clientele.TEL_NUMBER,jdbcType=VARCHAR},
+            #{clientele.ZPICKER_K,jdbcType=VARCHAR},
+            #{clientele.POST_CODE1,jdbcType=VARCHAR},
+            #{clientele.CITY1,jdbcType=VARCHAR},
+            #{clientele.COUNTRY,jdbcType=VARCHAR},
+            #{clientele.REGION,jdbcType=VARCHAR},
+            #{clientele.KLIMK,jdbcType=VARCHAR},
+            #{clientele.ZTERM,jdbcType=VARCHAR},
+            #{clientele.KTOKD,jdbcType=VARCHAR},
+            #{clientele.ZFPLX,jdbcType=VARCHAR},
+            #{clientele.ZZRYW,jdbcType=VARCHAR},
+            #{clientele.ZZRKP,jdbcType=VARCHAR},
+            #{clientele.ZZRJL,jdbcType=VARCHAR},
+            #{clientele.SPERR,jdbcType=VARCHAR},
+            #{clientele.LOEVM,jdbcType=VARCHAR},
+            #{clientele.CASSD,jdbcType=VARCHAR},
+            #{clientele.ZJYFW,jdbcType=VARCHAR},
+            #{clientele.ZZZSLX,jdbcType=VARCHAR},
+            #{clientele.ZZZSBH,jdbcType=VARCHAR},
+            #{clientele.ZZYXQS,jdbcType=DATE},
+            #{clientele.ZZYXQZ,jdbcType=DATE},
+            #{clientele.ZZLXR,jdbcType=VARCHAR},
+            #{clientele.ZZSFZH,jdbcType=VARCHAR},
+            #{clientele.ZZFZJG,jdbcType=VARCHAR},
+            #{clientele.ZZLXFS,jdbcType=VARCHAR},
+            #{clientele.ZZFDDBR,jdbcType=VARCHAR},
+            #{clientele.UPDATETIME,jdbcType=VARCHAR},
+            #{clientele.INSERTTIME,jdbcType=VARCHAR}
+        from dual
+        </foreach>
+    </insert>
+
+    <select id="findClienteleByKunnr" resultMap="ClienteleResultMap">
+        select * from dt_clientele where KUNNR in
+        <foreach collection="kunnrList" item="kunnr" index="index" separator="," open="(" close=")">
+            #{kunnr}
+        </foreach>
+    </select>
+
+    <update id="updateBatchClientele" parameterType="java.util.List">
+        <foreach collection="clienteleList" item="clientele" separator=";" close=";end;" open="begin" index="index">
+            update dt_clientele
+            <set>
+                <if test="clientele.NAME2 != null">	NAME2= #{clientele.NAME2,jdbcType=VARCHAR},</if>
+                <if test="clientele.SORT1 != null">	SORT1= #{clientele.SORT1,jdbcType=VARCHAR},</if>
+                <if test="clientele.SORT2 != null">	SORT2= #{clientele.SORT2,jdbcType=VARCHAR},</if>
+                <if test="clientele.STREET != null">	STREET= #{clientele.STREET,jdbcType=VARCHAR},</if>
+                <if test="clientele.ZZKHXS != null">	ZZKHXS= #{clientele.ZZKHXS,jdbcType=VARCHAR},</if>
+                <if test="clientele.ZZSHDZ != null">	ZZSHDZ= #{clientele.ZZSHDZ,jdbcType=VARCHAR},</if>
+                <if test="clientele.TEL_NUMBER != null">	TEL_NUMBER= #{clientele.TEL_NUMBER,jdbcType=VARCHAR},</if>
+                <if test="clientele.ZPICKER_K != null">	ZPICKER_K= #{clientele.ZPICKER_K,jdbcType=VARCHAR},</if>
+                <if test="clientele.POST_CODE1 != null">	POST_CODE1= #{clientele.POST_CODE1,jdbcType=VARCHAR},</if>
+                <if test="clientele.CITY1 != null">	CITY1= #{clientele.CITY1,jdbcType=VARCHAR},</if>
+                <if test="clientele.COUNTRY != null">	COUNTRY= #{clientele.COUNTRY,jdbcType=VARCHAR},</if>
+                <if test="clientele.REGION != null">	REGION= #{clientele.REGION,jdbcType=VARCHAR},</if>
+                <if test="clientele.KLIMK != null">	KLIMK= #{clientele.KLIMK,jdbcType=VARCHAR},</if>
+                <if test="clientele.ZTERM != null">	ZTERM= #{clientele.ZTERM,jdbcType=VARCHAR},</if>
+                <if test="clientele.KTOKD != null">	KTOKD= #{clientele.KTOKD,jdbcType=VARCHAR},</if>
+                <if test="clientele.ZFPLX != null">	ZFPLX= #{clientele.ZFPLX,jdbcType=VARCHAR},</if>
+                <if test="clientele.ZZRYW != null">	ZZRYW= #{clientele.ZZRYW,jdbcType=VARCHAR},</if>
+                <if test="clientele.ZZRKP != null">	ZZRKP= #{clientele.ZZRKP,jdbcType=VARCHAR},</if>
+                <if test="clientele.ZZRJL != null">	ZZRJL= #{clientele.ZZRJL,jdbcType=VARCHAR},</if>
+                <if test="clientele.SPERR != null">	SPERR= #{clientele.SPERR,jdbcType=VARCHAR},</if>
+                <if test="clientele.LOEVM != null">	LOEVM= #{clientele.LOEVM,jdbcType=VARCHAR},</if>
+                <if test="clientele.CASSD != null">	CASSD= #{clientele.CASSD,jdbcType=VARCHAR},</if>
+                <if test="clientele.ZJYFW != null">	ZJYFW= #{clientele.ZJYFW,jdbcType=VARCHAR},</if>
+                <if test="clientele.ZZZSLX != null">	ZZZSLX= #{clientele.ZZZSLX,jdbcType=VARCHAR},</if>
+                <if test="clientele.ZZZSBH != null">	ZZZSBH= #{clientele.ZZZSBH,jdbcType=VARCHAR},</if>
+                <if test="clientele.ZZYXQS != null">	Date ZZYXQS= #{clientele.ZZYXQS,jdbcType=DATE},</if>
+                <if test="clientele.ZZYXQZ != null">	Date ZZYXQZ= #{clientele.ZZYXQZ,jdbcType=DATE},</if>
+                <if test="clientele.ZZLXR != null">	ZZLXR= #{clientele.ZZLXR,jdbcType=VARCHAR},</if>
+                <if test="clientele.ZZSFZH != null">	ZZSFZH= #{clientele.ZZSFZH,jdbcType=VARCHAR},</if>
+                <if test="clientele.ZZFZJG != null">	ZZFZJG= #{clientele.ZZFZJG,jdbcType=VARCHAR},</if>
+                <if test="clientele.ZZLXFS != null">	ZZLXFS= #{clientele.ZZLXFS,jdbcType=VARCHAR},</if>
+                <if test="clientele.ZZFDDBR != null">	ZZFDDBR= #{clientele.ZZFDDBR,jdbcType=VARCHAR},</if>
+                <if test="clientele.UPDATETIME != null">	UPDATETIME= #{clientele.UPDATETIME,jdbcType=VARCHAR},</if>
+            </set>
+            where KUNNR = #{clientele.KUNNR,jdbcType=VARCHAR}
+        </foreach>
+    </update>
+
+    <resultMap id="SupplierResultMap" type="com.sypm.webapi.bean.Supplier">
+        <result column="LIFNR"	property="LIFNR" jdbcType="VARCHAR" />
+        <result column="NAME2"	property="NAME2" jdbcType="VARCHAR" />
+        <result column="SORT1"	property="SORT1" jdbcType="VARCHAR" />
+        <result column="SORT2"	property="SORT2" jdbcType="VARCHAR" />
+        <result column="STREET"	property="STREET" jdbcType="VARCHAR" />
+        <result column="STCD5"	property="STCD5" jdbcType="VARCHAR" />
+        <result column="TEL_NUMBER"	property="TEL_NUMBER" jdbcType="VARCHAR" />
+        <result column="POST_CODE1"	property="POST_CODE1" jdbcType="VARCHAR" />
+        <result column="CITY1"	property="CITY1" jdbcType="VARCHAR" />
+        <result column="COUNTRY"	property="COUNTRY" jdbcType="VARCHAR" />
+        <result column="REGION"	property="REGION" jdbcType="VARCHAR" />
+        <result column="ZZJYFS"	property="ZZJYFS" jdbcType="VARCHAR" />
+        <result column="ZZJJXZ"	property="ZZJJXZ" jdbcType="VARCHAR" />
+        <result column="ZZCKDZ"	property="ZZCKDZ" jdbcType="VARCHAR" />
+        <result column="ZZGYSJG"	property="ZZGYSJG" jdbcType="VARCHAR" />
+        <result column="ZZGYSTY"	property="ZZGYSTY" jdbcType="VARCHAR" />
+        <result column="ZZSHTXBA"	property="ZZSHTXBA" jdbcType="VARCHAR" />
+        <result column="ZZFRDB"	property="ZZFRDB" jdbcType="VARCHAR" />
+        <result column="ZZQYFZR"	property="ZZQYFZR" jdbcType="VARCHAR" />
+        <result column="ZZSFYP"	property="ZZSFYP" jdbcType="VARCHAR" />
+        <result column="ZZGYSXZ"	property="ZZGYSXZ" jdbcType="VARCHAR" />
+        <result column="ZZHZKSRQ"	property="ZZHZKSRQ" jdbcType="VARCHAR" />
+        <result column="ZTERM"	property="ZTERM" jdbcType="VARCHAR" />
+        <result column="KTOKK"	property="KTOKK" jdbcType="VARCHAR" />
+        <result column="SPERR"	property="SPERR" jdbcType="VARCHAR" />
+        <result column="SPERM"	property="SPERM" jdbcType="VARCHAR" />
+        <result column="LOEVM"	property="LOEVM" jdbcType="VARCHAR" />
+    </resultMap>
+
+    <insert id="addBatchSupplier" parameterType="java.util.List" useGeneratedKeys="false">
+
+        insert into dt_supplier
+        (
+            SUPPLIERID,
+            LIFNR,
+            NAME2,
+            SORT1,
+            SORT2,
+            STREET,
+            STCD5,
+            TEL_NUMBER,
+            POST_CODE1,
+            CITY1,
+            COUNTRY,
+            REGION,
+            ZZJYFS,
+            ZZJJXZ,
+            ZZCKDZ,
+            ZZGYSJG,
+            ZZGYSTY,
+            ZZSHTXBA,
+            ZZFRDB,
+            ZZQYFZR,
+            ZZSFYP,
+            ZZGYSXZ,
+            ZZHZKSRQ,
+            ZTERM,
+            KTOKK,
+            SPERR,
+            SPERM,
+            LOEVM,
+            INSERTTIME
+        )
+        <foreach collection="supplierList" item="supplier" separator="union all" open="(" close=")" index="index">
+        select
+            #{supplier.SUPPLIERID,jdbcType=VARCHAR},
+            #{supplier.LIFNR,jdbcType=VARCHAR},
+            #{supplier.NAME2,jdbcType=VARCHAR},
+            #{supplier.SORT1,jdbcType=VARCHAR},
+            #{supplier.SORT2,jdbcType=VARCHAR},
+            #{supplier.STREET,jdbcType=VARCHAR},
+            #{supplier.STCD5,jdbcType=VARCHAR},
+            #{supplier.TEL_NUMBER,jdbcType=VARCHAR},
+            #{supplier.POST_CODE1,jdbcType=VARCHAR},
+            #{supplier.CITY1,jdbcType=VARCHAR},
+            #{supplier.COUNTRY,jdbcType=VARCHAR},
+            #{supplier.REGION,jdbcType=VARCHAR},
+            #{supplier.ZZJYFS,jdbcType=VARCHAR},
+            #{supplier.ZZJJXZ,jdbcType=VARCHAR},
+            #{supplier.ZZCKDZ,jdbcType=VARCHAR},
+            #{supplier.ZZGYSJG,jdbcType=VARCHAR},
+            #{supplier.ZZGYSTY,jdbcType=VARCHAR},
+            #{supplier.ZZSHTXBA,jdbcType=VARCHAR},
+            #{supplier.ZZFRDB,jdbcType=VARCHAR},
+            #{supplier.ZZQYFZR,jdbcType=VARCHAR},
+            #{supplier.ZZSFYP,jdbcType=VARCHAR},
+            #{supplier.ZZGYSXZ,jdbcType=VARCHAR},
+            #{supplier.ZZHZKSRQ,jdbcType=VARCHAR},
+            #{supplier.ZTERM,jdbcType=VARCHAR},
+            #{supplier.KTOKK,jdbcType=VARCHAR},
+            #{supplier.SPERR,jdbcType=VARCHAR},
+            #{supplier.SPERM,jdbcType=VARCHAR},
+            #{supplier.LOEVM,jdbcType=VARCHAR},
+            #{supplier.INSERTTIME,jdbcType=VARCHAR}
+        from dual
+        </foreach>
+    </insert>
+
+    <select id="findSupplierByLifnr" resultMap="SupplierResultMap">
+        select * from dt_supplier where LIFNR in
+        <foreach collection="lifnrList" item="lifnr" index="index" separator="," open="(" close=")">
+            #{lifnr}
+        </foreach>
+    </select>
+
+    <update id="updateBatchSupplier" parameterType="java.util.List">
+        <foreach collection="supplierList" item="supplier" separator=";" close=";end;" open="begin" index="index">
+            update dt_supplier
+            <set>
+                <if test="supplier.NAME2 != null">	NAME2=#{supplier.NAME2,jdbcType=VARCHAR},</if>
+                <if test="supplier.SORT1 != null">	SORT1=#{supplier.SORT1,jdbcType=VARCHAR},</if>
+                <if test="supplier.SORT2 != null">	SORT2=#{supplier.SORT2,jdbcType=VARCHAR},</if>
+                <if test="supplier.STREET != null">	STREET=#{supplier.STREET,jdbcType=VARCHAR},</if>
+                <if test="supplier.STCD5 != null">	STCD5=#{supplier.STCD5,jdbcType=VARCHAR},</if>
+                <if test="supplier.TEL_NUMBER != null">	TEL_NUMBER=#{supplier.TEL_NUMBER,jdbcType=VARCHAR},</if>
+                <if test="supplier.POST_CODE1 != null">	POST_CODE1=#{supplier.POST_CODE1,jdbcType=VARCHAR},</if>
+                <if test="supplier.CITY1 != null">	CITY1=#{supplier.CITY1,jdbcType=VARCHAR},</if>
+                <if test="supplier.COUNTRY != null">	COUNTRY=#{supplier.COUNTRY,jdbcType=VARCHAR},</if>
+                <if test="supplier.REGION != null">	REGION=#{supplier.REGION,jdbcType=VARCHAR},</if>
+                <if test="supplier.ZZJYFS != null">	ZZJYFS=#{supplier.ZZJYFS,jdbcType=VARCHAR},</if>
+                <if test="supplier.ZZJJXZ != null">	ZZJJXZ=#{supplier.ZZJJXZ,jdbcType=VARCHAR},</if>
+                <if test="supplier.ZZCKDZ != null">	ZZCKDZ=#{supplier.ZZCKDZ,jdbcType=VARCHAR},</if>
+                <if test="supplier.ZZGYSJG != null">	ZZGYSJG=#{supplier.ZZGYSJG,jdbcType=VARCHAR},</if>
+                <if test="supplier.ZZGYSTY != null">	ZZGYSTY=#{supplier.ZZGYSTY,jdbcType=VARCHAR},</if>
+                <if test="supplier.ZZSHTXBA != null">	ZZSHTXBA=#{supplier.ZZSHTXBA,jdbcType=VARCHAR},</if>
+                <if test="supplier.ZZFRDB != null">	ZZFRDB=#{supplier.ZZFRDB,jdbcType=VARCHAR},</if>
+                <if test="supplier.ZZQYFZR != null">	ZZQYFZR=#{supplier.ZZQYFZR,jdbcType=VARCHAR},</if>
+                <if test="supplier.ZZSFYP != null">	ZZSFYP=#{supplier.ZZSFYP,jdbcType=VARCHAR},</if>
+                <if test="supplier.ZZGYSXZ != null">	ZZGYSXZ=#{supplier.ZZGYSXZ,jdbcType=VARCHAR},</if>
+                <if test="supplier.ZZHZKSRQ != null">	ZZHZKSRQ=#{supplier.ZZHZKSRQ,jdbcType=VARCHAR},</if>
+                <if test="supplier.ZTERM != null">	ZTERM=#{supplier.ZTERM,jdbcType=VARCHAR},</if>
+                <if test="supplier.KTOKK != null">	KTOKK=#{supplier.KTOKK,jdbcType=VARCHAR},</if>
+                <if test="supplier.SPERR != null">	SPERR=#{supplier.SPERR,jdbcType=VARCHAR},</if>
+                <if test="supplier.SPERM != null">	SPERM=#{supplier.SPERM,jdbcType=VARCHAR},</if>
+                <if test="supplier.LOEVM != null">	LOEVM=#{supplier.LOEVM,jdbcType=VARCHAR},</if>
+                <if test="supplier.UPDATETIME != null">	UPDATETIME =#{supplier.UPDATETIME,jdbcType=VARCHAR},</if>
+            </set>
+            where LIFNR = #{supplier.LIFNR,jdbcType=VARCHAR}
+        </foreach>
+    </update>
+
+    <resultMap id="CostCenterResultMap" type="com.sypm.webapi.bean.CostCenter">
+        <result column="KOSTL"	property="KOSTL" jdbcType="VARCHAR" />
+        <result column="DATBI"	property="DATBI" jdbcType="DATE" />
+        <result column="KOKRS"	property="KOKRS" jdbcType="VARCHAR" />
+        <result column="DATAB"	property="DATAB" jdbcType="DATE" />
+        <result column="BKZKP"	property="BKZKP" jdbcType="VARCHAR" />
+        <result column="PKZKP"	property="PKZKP" jdbcType="VARCHAR" />
+        <result column="KOSAR"	property="KOSAR" jdbcType="VARCHAR" />
+        <result column="PRCTR"	property="PRCTR" jdbcType="VARCHAR" />
+        <result column="ERSDA"	property="ERSDA" jdbcType="DATE" />
+        <result column="ORT01"	property="ORT01" jdbcType="VARCHAR" />
+        <result column="STRAS"	property="STRAS" jdbcType="VARCHAR" />
+        <result column="BUKRS"	property="BUKRS" jdbcType="VARCHAR" />
+        <result column="KTEXT"	property="KTEXT" jdbcType="VARCHAR" />
+        <result column="LTEXT"	property="LTEXT" jdbcType="VARCHAR" />
+    </resultMap>
+
+    <insert id="addBatchCostCenter" parameterType="java.util.List" useGeneratedKeys="false">
+
+        insert into dt_costCenter(
+            COSTCENTERID,
+            KOSTL,
+            DATBI,
+            KOKRS,
+            DATAB,
+            BKZKP,
+            PKZKP,
+            KOSAR,
+            PRCTR,
+            ERSDA,
+            ORT01,
+            STRAS,
+            BUKRS,
+            KTEXT,
+            LTEXT,
+            INSERTTIME
+        )
+        <foreach collection="costCenterList" item="costCenter" separator="union all" open="(" close=")" index="index">
+        select
+            #{costCenter.COSTCENTERID,jdbcType=VARCHAR},
+            #{costCenter.KOSTL,jdbcType=VARCHAR},
+            #{costCenter.DATBI,jdbcType=DATE},
+            #{costCenter.KOKRS,jdbcType=VARCHAR},
+            #{costCenter.DATAB,jdbcType=DATE},
+            #{costCenter.BKZKP,jdbcType=VARCHAR},
+            #{costCenter.PKZKP,jdbcType=VARCHAR},
+            #{costCenter.KOSAR,jdbcType=VARCHAR},
+            #{costCenter.PRCTR,jdbcType=VARCHAR},
+            #{costCenter.ERSDA,jdbcType=DATE},
+            #{costCenter.ORT01,jdbcType=VARCHAR},
+            #{costCenter.STRAS,jdbcType=VARCHAR},
+            #{costCenter.BUKRS,jdbcType=VARCHAR},
+            #{costCenter.KTEXT,jdbcType=VARCHAR},
+            #{costCenter.LTEXT,jdbcType=VARCHAR},
+            #{costCenter.INSERTTIME,jdbcType=VARCHAR}
+        from dual
+        </foreach>
+    </insert>
+
+    <select id="findCostCenterByKostl" resultMap="CostCenterResultMap">
+        select * from dt_costCenter where KOSTL in
+        <foreach collection="kostlList" item="kostl" index="index" separator="," open="(" close=")">
+            #{kostl}
+        </foreach>
+    </select>
+
+    <update id="updateBatchCostCenter" parameterType="java.util.List">
+        <foreach collection="costCenterList" separator=";" item="costCenter" open="begin" close=";end;" index="index">
+            update dt_costCenter
+            <set>
+                <if test="costCenter.DATBI"> DATBI=#{costCenter.DATBI,jdbcType=DATE},</if>
+                <if test="costCenter.KOKRS"> KOKRS=#{costCenter.KOKRS,jdbcType=VARCHAR},</if>
+                <if test="costCenter.DATAB"> DATAB=#{costCenter.DATAB,jdbcType=DATE},</if>
+                <if test="costCenter.BKZKP"> BKZKP=#{costCenter.BKZKP,jdbcType=VARCHAR},</if>
+                <if test="costCenter.PKZKP"> PKZKP=#{costCenter.PKZKP,jdbcType=VARCHAR},</if>
+                <if test="costCenter.KOSAR"> KOSAR=#{costCenter.KOSAR,jdbcType=VARCHAR},</if>
+                <if test="costCenter.PRCTR"> PRCTR=#{costCenter.PRCTR,jdbcType=VARCHAR},</if>
+                <if test="costCenter.ERSDA"> ERSDA=#{costCenter.ERSDA,jdbcType=DATE},</if>
+                <if test="costCenter.ORT01"> ORT01=#{costCenter.ORT01,jdbcType=VARCHAR},</if>
+                <if test="costCenter.STRAS"> STRAS=#{costCenter.STRAS,jdbcType=VARCHAR},</if>
+                <if test="costCenter.BUKRS"> BUKRS=#{costCenter.BUKRS,jdbcType=VARCHAR},</if>
+                <if test="costCenter.KTEXT"> KTEXT=#{costCenter.KTEXT,jdbcType=VARCHAR},</if>
+                <if test="costCenter.LTEXT"> LTEXT=#{costCenter.LTEXT,jdbcType=VARCHAR},</if>
+                <if test="costCenter.UPDATETIME"> UPDATETIME=#{costCenter.UPDATETIME,jdbcType=VARCHAR},</if>
+            </set>
+            where KOSTL = #{costCenter.KOSTL,jdbcType=VARCHAR}
+        </foreach>
+    </update>
+
+    <resultMap id="OrganizationResultMap" type="com.sypm.webapi.bean.Organization">
+        <result column="KUNNR"	property="KUNNR"  jdbcType="VARCHAR" />
+        <result column="ZZKUNNR" property="ZZKUNNR"  jdbcType="VARCHAR" />
+        <result column="WERKS"	property="WERKS"  jdbcType="VARCHAR" />
+        <result column="VKBUR"	property="VKBUR"  jdbcType="VARCHAR" />
+        <result column="BEZEI"	property="BEZEI"  jdbcType="VARCHAR" />
+        <result column="BUKRS"	property="BUKRS"  jdbcType="VARCHAR" />
+        <result column="BUTXT"	property="BUTXT"  jdbcType="VARCHAR" />
+        <result column="ZZDQ"	property="ZZDQ"  jdbcType="VARCHAR" />
+        <result column="ZZPQ"	property="ZZPQ"  jdbcType="VARCHAR" />
+        <result column="ZZDQT"	property="ZZDQT"  jdbcType="VARCHAR" />
+        <result column="ZZPQT"	property="ZZPQT"  jdbcType="VARCHAR" />
+        <result column="ZDQBH"	property="ZDQBH"  jdbcType="VARCHAR" />
+        <result column="ZDQMC"	property="ZDQMC"  jdbcType="VARCHAR" />
+    </resultMap>
+
+    <insert id="addBatchOrganization" parameterType="java.util.List" useGeneratedKeys="false">
+
+        insert into dt_organization(
+            ORGANIZATIONID,
+            KUNNR,
+            ZZKUNNR,
+            WERKS,
+            VKBUR,
+            BEZEI,
+            BUKRS,
+            BUTXT,
+            ZZDQ,
+            ZZPQ,
+            ZZDQT,
+            ZZPQT,
+            ZDQBH,
+            ZDQMC,
+            INSERTTIME
+        )
+        <foreach collection="organizationList" item="organization" separator="union all" open="(" close=")" index="index">
+        select
+            #{organization.ORGANIZATIONID,jdbcType=VARCHAR},
+            #{organization.KUNNR,jdbcType=VARCHAR},
+            #{organization.ZZKUNNR,jdbcType=VARCHAR},
+            #{organization.WERKS,jdbcType=VARCHAR},
+            #{organization.VKBUR,jdbcType=VARCHAR},
+            #{organization.BEZEI,jdbcType=VARCHAR},
+            #{organization.BUKRS,jdbcType=VARCHAR},
+            #{organization.BUTXT,jdbcType=VARCHAR},
+            #{organization.ZZDQ,jdbcType=VARCHAR},
+            #{organization.ZZPQ,jdbcType=VARCHAR},
+            #{organization.ZZDQT,jdbcType=VARCHAR},
+            #{organization.ZZPQT,jdbcType=VARCHAR},
+            #{organization.ZDQBH,jdbcType=VARCHAR},
+            #{organization.ZDQMC,jdbcType=VARCHAR},
+            #{organization.INSERTTIME,jdbcType=VARCHAR}
+        from dual
+        </foreach>
+    </insert>
+
+    <select id="findOrganizationByKunnr" resultMap="OrganizationResultMap">
+        select * from dt_organization where KUNNR in
+        <foreach collection="kunnnrList" item="kunnnr" index="index" separator="," open="(" close=")">
+            #{kunnnr, jdbcType=VARCHAR}
+        </foreach>
+    </select>
+
+    <update id="updateBatchOrganization" parameterType="java.util.List">
+        <foreach collection="organizationList" separator=";" item="organization" open="begin" close=";end;" index="index">
+            update dt_organization
+            <set>
+                <if test="organization.ZZKUNNR">	ZZKUNNR=#{organization.ZZKUNNR,jdbcType=VARCHAR},</if>
+                <if test="organization.WERKS">	WERKS=#{organization.WERKS,jdbcType=VARCHAR},</if>
+                <if test="organization.VKBUR">	VKBUR=#{organization.VKBUR,jdbcType=VARCHAR},</if>
+                <if test="organization.BEZEI">	BEZEI=#{organization.BEZEI,jdbcType=VARCHAR},</if>
+                <if test="organization.BUKRS">	BUKRS=#{organization.BUKRS,jdbcType=VARCHAR},</if>
+                <if test="organization.BUTXT">	BUTXT=#{organization.BUTXT,jdbcType=VARCHAR},</if>
+                <if test="organization.ZZDQ">	ZZDQ=#{organization.ZZDQ,jdbcType=VARCHAR},</if>
+                <if test="organization.ZZPQ">	ZZPQ=#{organization.ZZPQ,jdbcType=VARCHAR},</if>
+                <if test="organization.ZZDQT">	ZZDQT=#{organization.ZZDQT,jdbcType=VARCHAR},</if>
+                <if test="organization.ZZPQT">	ZZPQT=#{organization.ZZPQT,jdbcType=VARCHAR},</if>
+                <if test="organization.ZDQBH">	ZDQBH=#{organization.ZDQBH,jdbcType=VARCHAR},</if>
+                <if test="organization.ZDQMC">	ZDQMC=#{organization.ZDQMC,jdbcType=VARCHAR},</if>
+                <if test="organization.UPDATETIME"> UPDATETIME=#{organization.UPDATETIME,jdbcType=VARCHAR},</if>
+            </set>
+            where KUNNR = #{organization.KUNNR,jdbcType=VARCHAR}
+        </foreach>
+    </update>
+
+    <resultMap id="ProfitCenterResultMap" type="com.sypm.webapi.bean.ProfitCenter">
+        <result column="PRCTR" property="PRCTR" jdbcType="VARCHAR" />
+        <result column="DATBI" property="DATBI" jdbcType="DATE" />
+        <result column="KOKRS" property="KOKRS" jdbcType="VARCHAR" />
+        <result column="DATAB" property="DATAB" jdbcType="DATE" />
+        <result column="ABTEI" property="ABTEI" jdbcType="VARCHAR" />
+        <result column="ERSDA" property="ERSDA" jdbcType="DATE" />
+        <result column="ORT01" property="ORT01" jdbcType="VARCHAR" />
+        <result column="STRAS" property="STRAS" jdbcType="VARCHAR" />
+        <result column="BUKRS" property="BUKRS" jdbcType="VARCHAR" />
+        <result column="KTEXT" property="KTEXT" jdbcType="VARCHAR" />
+        <result column="LTEXT" property="LTEXT" jdbcType="VARCHAR" />
+    </resultMap>
+
+    <insert id="addBatchProfitCenter" parameterType="java.util.List" useGeneratedKeys="false">
+
+        insert into dt_profitCenter(
+            PROFITCENTERID,
+            PRCTR,
+            DATBI,
+            KOKRS,
+            DATAB,
+            ABTEI,
+            ERSDA,
+            ORT01,
+            STRAS,
+            BUKRS,
+            KTEXT,
+            LTEXT,
+            INSERTTIME
+        )
+        <foreach collection="profitCenterList" item="profitCenter" separator="union all" open="(" close=")" index="index">
+        select
+            #{profitCenter.PROFITCENTERID,jdbcType=VARCHAR},
+            #{profitCenter.PRCTR,jdbcType=VARCHAR},
+            #{profitCenter.DATBI,jdbcType=DATE},
+            #{profitCenter.KOKRS,jdbcType=VARCHAR},
+            #{profitCenter.DATAB,jdbcType=DATE},
+            #{profitCenter.ABTEI,jdbcType=VARCHAR},
+            #{profitCenter.ERSDA,jdbcType=DATE},
+            #{profitCenter.ORT01,jdbcType=VARCHAR},
+            #{profitCenter.STRAS,jdbcType=VARCHAR},
+            #{profitCenter.BUKRS,jdbcType=VARCHAR},
+            #{profitCenter.KTEXT,jdbcType=VARCHAR},
+            #{profitCenter.LTEXT,jdbcType=VARCHAR},
+            #{profitCenter.INSERTTIME,jdbcType=VARCHAR}
+        from dual
+        </foreach>
+    </insert>
+
+    <select id="findProfitCenterByPrctr" resultMap="ProfitCenterResultMap">
+        select * from dt_profitCenter where prctr in
+        <foreach collection="prctrList" item="prctr" index="index" separator="," open="(" close=")">
+            #{prctr, jdbcType=VARCHAR}
+        </foreach>
+    </select>
+
+    <update id="updateBatchProfitCenter" parameterType="java.util.List">
+        <foreach collection="profitCenterList" separator=";" item="profitCenter" open="begin" close=";end;" index="index">
+            update dt_profitCenter
+            <set>
+                <if test="profitCenter.DATBI">DATBI=#{profitCenter.DATBI,jdbcType=DATE},</if>
+                <if test="profitCenter.KOKRS">KOKRS=#{profitCenter.KOKRS,jdbcType=VARCHAR},</if>
+                <if test="profitCenter.DATAB">DATAB=#{profitCenter.DATAB,jdbcType=DATE},</if>
+                <if test="profitCenter.ABTEI">ABTEI=#{profitCenter.ABTEI,jdbcType=VARCHAR},</if>
+                <if test="profitCenter.ERSDA">ERSDA=#{profitCenter.ERSDA,jdbcType=DATE},</if>
+                <if test="profitCenter.ORT01">ORT01=#{profitCenter.ORT01,jdbcType=VARCHAR},</if>
+                <if test="profitCenter.STRAS">STRAS=#{profitCenter.STRAS,jdbcType=VARCHAR},</if>
+                <if test="profitCenter.BUKRS">BUKRS=#{profitCenter.BUKRS,jdbcType=VARCHAR},</if>
+                <if test="profitCenter.KTEXT">KTEXT=#{profitCenter.KTEXT,jdbcType=VARCHAR},</if>
+                <if test="profitCenter.LTEXT">LTEXT=#{profitCenter.LTEXT,jdbcType=VARCHAR},</if>
+                <if test="profitCenter.UPDATETIME">LTEXT=#{profitCenter.UPDATETIME,jdbcType=VARCHAR},</if>
+            </set>
+            where prctr = #{profitCenter.PRCTR,jdbcType=VARCHAR}
+        </foreach>
+    </update>
+</mapper>

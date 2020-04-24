@@ -1,0 +1,35 @@
+# spring:
+#  datasource:
+#    driver-class-name: com.microsoft.sqlserver.jdbc.SQLServerDriver
+#    url: jdbc:sqlserver://192.168.2.120:1433;Databasename=CSSJK
+#    username: sa
+#    password: sypm@2019
+#    hikari:
+#      idle-timeout: 60000
+#      maximum-pool-size: 30
+#      minimum-idle: 10
+spring:
+  datasource:
+    driver-class-name: oracle.jdbc.driver.OracleDriver
+    url: jdbc:oracle:thin:@192.168.2.133:1521:sytestdb
+    username: JAVA_SAP
+    password: JAVA_SAP_20200408
+    hikari:
+      idle-timeout: 60000
+      maximum-pool-size: 30
+      minimum-idle: 10
+
+mybatis:
+  mapper-locations: classpath:mapper/*.xml  #配置映射文件
+  type-aliases-package: com.sypm.webapi.bean #配置实体类
+
+server:
+  port: 8089
+
+logging:
+  level:
+    com.sypm.webapi.mapper: trace
+  config:
+    classpath: log4j2-spring.xml
+
+
